@@ -1,0 +1,8 @@
+[submodule "guaris.github.io"]
+	path = guaris.github.io
+	url = http://github.com/guaris/guaris.github.io
+	branch = master
+[submodule "public"]
+	path = public
+	url = http://github.com/guaris/guaris.github.io
+	branch = master
