@@ -1,13 +1,13 @@
 +++
 title = "How to Install Turtl on Linux"
-slug = "portfolio"
-date = "2019-01-01"
+slug = "turtl"
+date = "2019-03-08"
 +++
 
 # What is Turtl?
 
 
-Turtl is an open-source alternative to cloud-based storage services. With a focus on privacy, Turtl offers a place to store and access your passwords, bookmarks and pictures. Hosting your own Turtl server on a secure Linode allows you to monitor your own security.
+Turtl is an open-source alternative to cloud-based storage services. With a focus on privacy, Turtl offers a place to store and access your passwords, bookmarks and pictures. Hosting your own Turtl server on a secure server allows you to monitor your own security.
 
 The Turtl server is written in Common Lisp, and the low-level encryption is derived from the Stanford JavaScript Crypto Library. If encryption is important to you, read over the encryption specifics section of the [official documentation](https://turtlapp.com/docs/security/encryption-specifics/)
 
@@ -97,7 +97,7 @@ Create the default Turtl configuration file:
 
     cp /home/turtl/api/config/config.default.lisp /home/turtl/api/config/config.lisp
 
-The `config.lisp` file is where the configurations for your server are stored. If you want to connect to your Linode from a Turtl desktop or mobile client, you need to add the Linode's public IP address to:
+The `config.lisp` file is where the configurations for your server are stored. If you want to connect to your server from a Turtl desktop or mobile client, you need to add the server's public IP address to:
 
 
     (defvar *site-url* "http://1.0.0.0:8181"
