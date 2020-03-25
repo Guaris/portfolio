@@ -24,7 +24,7 @@ pygmentscodefencesguesssyntax = true
     favicon_32 = "/img/favicon-32x32.png"
     favicon_16 = "/img/favicon-16x16.png"
 
-    footercontent = "Angel Guarisma Portfolio"
+    footercontent = "Angel Guarisma's Portfolio"
 
     hidecredits = false
     hidecopyright = false
@@ -55,6 +55,17 @@ pygmentscodefencesguesssyntax = true
     name = "Portfolio"
     weight = 2
     url  = "/portfolio/"
+
+
+[outputFormats.Algolia]
+basename = "algolia"
+isplaintext = true
+mediatype = "application/json"
+noAlternative = true
+
+[params.algolia]
+vars = ["title", "publishdate", "permalink"]
+params = ["categories", "tags"]
 
 
 
